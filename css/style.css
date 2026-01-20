@@ -23,6 +23,10 @@ a {
     color: var(--dark-color);
 }
 
+a:hover {
+    opacity: 0.8;
+}
+
 .width-full {
     width: 100% !important;
 }
@@ -221,6 +225,7 @@ a {
     background-color: var(--me-color);
     display: inline-block;
     height: 10px;
+    overflow: hidden;
 }
 
 #content .list-item .item:nth-child(2n) .background .level {
@@ -233,6 +238,19 @@ a {
     background-color: var(--me-sub-color);
     width: var(--level);
     height: 10px;
+}
+
+#content .list-item .item .background .level {
+    animation: slideRight 1s ;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: none;
+    }
 }
 
 #content .list-item .item .background-item {
@@ -256,4 +274,27 @@ a {
 #content .list-item .item:nth-child(2n) .background-item {
     background-image: linear-gradient(to top, var(--main-color) 0%, var(--main-color) 50%, #fff0 50%, #fff0 100%); 
     border-radius: 70%;
+}
+
+#content .profile .list-item .item {
+    display: flex;
+    
+}
+
+#content .profile .list-item .item .icon {
+    margin-right: 24px;
+    font-size: 24px;
+}
+
+#content .profile .list-item .item a {
+    align-self: center;
+}
+
+#content .project ol {
+    padding-left: 24px;
+}
+
+#content .project ol p:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
