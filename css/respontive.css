@@ -1,0 +1,56 @@
+/* Tablet */
+
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    
+}
+
+/* Tablet và Mobile */
+
+@media (max-width: 63.9375em) {
+   
+}
+
+/* Mobile */
+
+@media (max-width: 46.1875em) {
+    #header {
+        aspect-ratio: 7 / 4;
+    }
+
+    #header .background .coating {
+        width: 80%;
+    }
+
+    #header .background .line {
+        width: 120%;
+        height: 1.5px;
+    }
+
+    #header .background .circle {
+        width: calc(80% * 4 / 7);
+    }
+
+    #header .background .avatar {
+        width: calc(80% * 4 / 7);
+    }
+
+    #header .background .line-circle {
+        width: calc(80% * 4 / 7);
+    }
+
+    #header .info {
+        position: static;
+        padding: 16px 24px;
+        /* margin: auto; */
+    }
+
+    #header .info .about-me .name {
+        font-size: 46px;
+    }
+    
+    #content {
+        display: block;
+        padding: 4px;
+    }
+
+}
