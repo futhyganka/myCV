@@ -39,6 +39,10 @@ a:hover {
     float: right;
 }
 
+li {
+    text-align: justify;
+}
+
 #main {
     max-width: 1024px;
     flex: 1;
@@ -222,26 +226,18 @@ a:hover {
 
 #content .list-item .item .background {
     width: 50%;
-    background-color: var(--me-color);
+    /* background-color: var(--me-color); */
     display: inline-block;
     height: 10px;
     overflow: hidden;
-}
-
-#content .list-item .item:nth-child(2n) .background .level {
     background-color: var(--main-color);
-    width: var(--level);
-    height: 10px;
-}
-
-#content .list-item .item:nth-child(2n + 1) .background .level {
-    background-color: var(--me-sub-color);
-    width: var(--level);
-    height: 10px;
 }
 
 #content .list-item .item .background .level {
     animation: slideRight 1s ;
+    background-color: var(--me-color);
+    width: var(--level);
+    height: 10px;
 }
 
 @keyframes slideRight {
@@ -292,9 +288,4 @@ a:hover {
 
 #content .project ol {
     padding-left: 24px;
-}
-
-#content .project ol p:hover {
-    opacity: 0.8;
-    cursor: pointer;
 }
