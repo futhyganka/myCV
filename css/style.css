@@ -251,6 +251,7 @@ li {
 
 #content .list-item .item .background-item {
     font-weight: 600;
+    border-radius: 70%;
 }
 
 #content .list-item .item .content-item {
@@ -264,17 +265,14 @@ li {
 
 #content .list-item .item:nth-child(2n + 1) .background-item {
     background-image: linear-gradient(to top, var(--sub-color) 0%, var(--sub-color) 50%, #fff0 50%, #fff0 100%); 
-    border-radius: 70%;
 }
 
 #content .list-item .item:nth-child(2n) .background-item {
-    background-image: linear-gradient(to top, var(--main-color) 0%, var(--main-color) 50%, #fff0 50%, #fff0 100%); 
-    border-radius: 70%;
+    background-image: linear-gradient(to top, var(--main-color) 0%, var(--main-color) 50%, #fff0 50%, #fff0 100%);
 }
 
 #content .profile .list-item .item {
     display: flex;
-    
 }
 
 #content .profile .list-item .item .icon {
