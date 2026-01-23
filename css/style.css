@@ -308,7 +308,7 @@ li {
 }
 
 #footer .info .item {
-    margin: 8px calc(5.2vw + 8px);
+    margin: 8px calc(2.5vw + 18px);
     opacity: 0.8;
 }
 
