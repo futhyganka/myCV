@@ -187,6 +187,7 @@ li {
     padding: 10px 32px;
     z-index: 0;
     text-align: center;
+    overflow: hidden;
 }
 
 #content .title .background {
